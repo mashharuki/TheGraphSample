@@ -6,9 +6,14 @@
   },
   "scripts": {
     "test": "npx hardhat test",
-    "compile": "npx hardhat compile"
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.ts --network goerli",
+    "verify": "npx hardhat verify 0x336709CAbCB19362Bf9374aE4811FF934E9626B6 --network goerli"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.2"
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
+    "@openzeppelin/contracts": "^4.8.2",
+    "dotenv": "^16.0.3"
   }
 }

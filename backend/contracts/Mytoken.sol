@@ -6,8 +6,13 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
+/**
+ * サンプル用のテストトークンコントラクト
+ */
 contract MyToken is ERC20, ERC20Burnable, Pausable, Ownable {
-    constructor() ERC20("MyToken", "MTK") {}
+    constructor() ERC20("MyToken", "MTK") {
+        _mint(msg.sender, 10000000000000000000000);
+    }
 
     function pause() public onlyOwner {
         _pause();
