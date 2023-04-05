@@ -9,5 +9,9 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {}
+  "scripts": {
+    "subgraph:build": "yarn workspace subgraph build",
+    "subgraph:codegen": "yarn workspace subgraph codegen",
+    "subgraph:deploy": "yarn workspace subgraph deploy"
+  }
 }

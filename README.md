@@ -8,10 +8,36 @@ The Graph は、Ethereum の情報にアクセスするための API を、Graph
 
 ## 今回テスト用に用意したコントラクト 
 
+[0x0a730733Ee85466278Cd31F452165A30971Ecdbd](https://snowtrace.io/address/0x0a730733Ee85466278Cd31F452165A30971Ecdbd)
+
 ## Initialize your Subgraph (新しいサブグラフプロジェクトを作成する。)
 
 ```bash
-graph init --studio <SUBGRAPH_SLUG>
+graph init --studio subgraph
+```
+
+## Write your Subgraph
+
+- マニフェスト (subgraph.yaml) - マニフェストは、サブグラフがインデックスするデータソースを定義します。
+- スキーマ (schema.graphql) - GraphQLスキーマは、サブグラフからどのようなデータを取得したいかを定義しています。
+- AssemblyScript Mappings (mapping.ts) - データソースからスキーマで定義されたエンティティにデータを変換するコードです。
+
+## Deploy to the Subgraph Studio
+
+1. go to [https://thegraph.com/studio/](https://thegraph.com/studio/)
+2. connect wallet
+3. run `graph auth --studio API_KEY`
+4. run `cd subgraph`
+5. run `graph codegen && graph build`
+6. run `graph deploy --studio subgraph`
+
+うまくいけば、下記のような出力が出る。
+
+```bash
+Deployed to https://thegraph.com/studio/subgraph/subgraph
+
+Subgraph endpoints:
+Queries (HTTP):     https://api.studio.thegraph.com/query/44992/subgraph/v0.0.1
 ```
 
 ### 参考文献
