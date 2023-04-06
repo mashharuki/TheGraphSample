@@ -49,3 +49,4 @@ Queries (HTTP):     https://api.studio.thegraph.com/query/44992/subgraph/v0.0.1
 5. [Nodejs のバージョンを上げたら`error:0308010C:digital envelope routines::unsupported`が出てしまう](https://qiita.com/akitkat/items/f455bbc088a408cbc3a5)
 6. [QuickStart](https://thegraph.com/docs/en/cookbook/quick-start/)
 7. [The Graph prize](https://ethglobal.com/events/tokyo/prizes)
+8. [Hacker Resource Pack](https://thegraphfoundation.notion.site/Hacker-Resource-Pack-8dcb2946fa7f49f4803aaf550c939264)

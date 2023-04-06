@@ -12,6 +12,7 @@
   "scripts": {
     "subgraph:build": "yarn workspace subgraph build",
     "subgraph:codegen": "yarn workspace subgraph codegen",
-    "subgraph:deploy": "yarn workspace subgraph deploy"
+    "subgraph:deploy": "yarn workspace subgraph deploy",
+    "frontend:start": "yarn workspace frontend start"
   }
 }
