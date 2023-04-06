@@ -4,7 +4,7 @@ import { gql, Client, Provider, cacheExchange, fetchExchange, useQuery} from 'ur
 import { useEffect, useState } from 'react';
 
 // API エンドポイント
-const API_URL = "https://api.studio.thegraph.com/query/44992/subgraph/v0.0.1";
+const API_URL = "https://api.studio.thegraph.com/query/44992/subgraph/v0.0.2";
 // query
 const query = gql`
   query {
