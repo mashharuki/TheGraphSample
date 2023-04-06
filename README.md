@@ -128,3 +128,4 @@ export default Root;
 6. [QuickStart](https://thegraph.com/docs/en/cookbook/quick-start/)
 7. [The Graph prize](https://ethglobal.com/events/tokyo/prizes)
 8. [Hacker Resource Pack](https://thegraphfoundation.notion.site/Hacker-Resource-Pack-8dcb2946fa7f49f4803aaf550c939264)
+9. [【SubGraph作成からフロント表示まで】TheGraphの始め方](https://zenn.dev/nemofilm/articles/605572d3cc9274)
